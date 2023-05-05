@@ -158,7 +158,7 @@ int jachutou(char letra){
 
 void ganhouErrou(){
 	if(acertou()){
-		printf("\nParabéns, você ganhou!\n\n");
+		printf("\nParabÃ©ns, vocÃª ganhou!\n\n");
 	
 	    printf("       ___________      \n");
 	    printf("      '._==_==_=_.'     \n");
@@ -171,7 +171,7 @@ void ganhouErrou(){
 	    printf("         _.' '._        \n");
 	    printf("        '-------'       \n\n");
 	}else{
-		printf("\nPuxa, você foi enforcado!\n");
+		printf("\nPuxa, vocÃª foi enforcado!\n");
 	    printf("A palavra era **%s**\n\n", palavraSecreta);
 	
 	    printf("    _______________         \n");
@@ -205,6 +205,7 @@ int main() {
 	} while(!acertou() && !enforcou());
 	
 	ganhouErrou();
+	adicionaPalavra();
 	return 0;
 }
 
